@@ -8,7 +8,7 @@ import MaterialsComponent from '../Components/MaterialsComponent.jsx'
 export default function Root() {
     return (
         <Routes>
-            <Route index element={<DashboardComponent />} />
+            <Route index element={<LoginComponent />} />
             <Route path="/materials" element={<MaterialsComponent />} />
             <Route path="/login" element={<LoginComponent />} />
             <Route path="/dashboard" element={<DashboardComponent />} />
