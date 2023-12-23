@@ -10,6 +10,7 @@ function LoginComponent() {
         <br />
         <label htmlFor="">Contraseña</label>
         <input type="text" name="contrasena" />
+        <br />
         <button type="submit">Iniciar Sesion</button>
       </form>
     </div>
