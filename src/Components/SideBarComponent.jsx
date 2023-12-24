@@ -23,6 +23,9 @@ function SideBarComponent({ handleOptionSelect }) {
                 <div className="">
                     <ul className="">
                         <SidebarItem label="Materials" onClick={() => handleLiClick('materials')} />
+                        <SidebarItem label="ComponentOne" onClick={() => handleLiClick('componentOne')} />
+                        <SidebarItem label="ComponentTwo" onClick={() => handleLiClick('componentTwo')} />
+                        <SidebarItem label="ComponentTree" onClick={() => handleLiClick('componentTree')} />
                         
                     </ul>
                 </div>
