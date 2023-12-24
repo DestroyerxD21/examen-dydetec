@@ -5,19 +5,18 @@ function MaterialsComponent() {
         <div>
             <table>
                 <tr>
-                    <th>Company</th>
-                    <th>Contact</th>
-                    <th>Country</th>
+                    <th>Cable</th>
+                    <th>Tipos</th>
+                    <th>Metros</th>
+                    <th>Ubicacion</th>
+                    <th>Stock</th>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>Germany</td>
-                </tr>
-                <tr>
-                    <td>Centro comercial Moctezuma</td>
-                    <td>Francisco Chang</td>
-                    <td>Mexico</td>
+                    <td>Ethernet</td>
+                    <td>UTP</td>
+                    <td>30.0 Mts</td>
+                    <td>Site Lerma</td>
+                    <td>Disponible</td>
                 </tr>
             </table>
         </div>
