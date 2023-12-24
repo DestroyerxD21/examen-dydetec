@@ -1,28 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-function SideBarComponent() {
+
+const SidebarItem = ({ label, onClick,}) => (
+    <li>
+        <a
+            onClick={onClick}
+            className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            
+            <span className="ml-3">{label}</span>
+        </a>
+    </li>
+)
+
+function SideBarComponent({ handleOptionSelect }) {
+    const handleLiClick = (option) => {
+        handleOptionSelect(option)
+    }
+
     return (
         <div>
-            <div
-                style={{
-                    width: '200px',
-                    height: '800px',
-                    backgroundColor: '#f0f0f0',
-                    padding: '20px',
-                }}>
-                <h2>Sidebar</h2>
-                <ul>
-                    <li>
-                        <Link to="/">Dashboard</Link>
-                    </li>
-                    <li>
-                        <Link to="/materials">Materials</Link>
-                    </li>
-                    <li>
-                        <Link to="/login">Login</Link>
-                    </li>
-                </ul>
-            </div>
+            <aside>
+                <div className="">
+                    <ul className="">
+                        <SidebarItem label="Materials" onClick={() => handleLiClick('materials')} />
+                        
+                    </ul>
+                </div>
+            </aside>
         </div>
     )
 }
