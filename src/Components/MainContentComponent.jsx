@@ -12,15 +12,15 @@ function MainContentComponent() {
     }
 
     return (
-        <div>
+        <div className='main-container'>
+            <div className='container-sidebar'>
             <SideBarComponent handleOptionSelect={handleOptionSelect} />
-            <div className="">
+            </div>
+            <div className="container-sections">
                 {selectedOption === 'materials' && <MaterialsComponent />}
                 {selectedOption === 'componentOne' && <ExampleComponent1 />}
                 {selectedOption === 'componentTwo' && <ExampleComponent2 />}
                 {selectedOption === 'componentTree' && <ExampleComponent3 />}
-
-                
             </div>
         </div>
     )

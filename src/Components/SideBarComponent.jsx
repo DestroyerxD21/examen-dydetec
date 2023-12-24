@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 
 const SidebarItem = ({ label, onClick,}) => (
     <li>
@@ -18,14 +17,14 @@ function SideBarComponent({ handleOptionSelect }) {
     }
 
     return (
-        <div>
-            <aside>
+        <div className='<container-aside>'>
+            <aside className='aside'>
                 <div className="">
-                    <ul className="">
+                    <ul className="ul-decorators">
                         <SidebarItem label="Materials" onClick={() => handleLiClick('materials')} />
-                        <SidebarItem label="ComponentOne" onClick={() => handleLiClick('componentOne')} />
-                        <SidebarItem label="ComponentTwo" onClick={() => handleLiClick('componentTwo')} />
-                        <SidebarItem label="ComponentTree" onClick={() => handleLiClick('componentTree')} />
+                        <SidebarItem label="Component One" onClick={() => handleLiClick('componentOne')} />
+                        <SidebarItem label="Component Two" onClick={() => handleLiClick('componentTwo')} />
+                        <SidebarItem label="Component Tree" onClick={() => handleLiClick('componentTree')} />
                         
                     </ul>
                 </div>

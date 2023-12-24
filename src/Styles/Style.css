@@ -1,0 +1,50 @@
+.aside{
+    margin-top: 0;
+    height: 800px;
+    width: 250px;
+}
+
+.main-container{
+    background-color: rgb(230, 9, 230);
+    display: inline-flex
+    
+}
+
+.container-sidebar{
+    background-color: rgb(12, 128, 217);
+    border: black 5px solid;
+}
+
+.container-sections{
+    background-color: rgb(255, 255, 255);
+    border: black 5px solid;
+    height: 800px;
+    width: 1400px;
+}
+
+.ul-decorators{
+    list-style-type: none;
+    
+}
+
+.table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.table th, .table td {
+    border: 1px solid black;
+}
+
+
+.table-header {
+    font-size: 25px;
+}
+
+.table-cell {
+    font-size: 25px;
+}
+
+.sidebar-item {
+    font-size: 25px;
+}
