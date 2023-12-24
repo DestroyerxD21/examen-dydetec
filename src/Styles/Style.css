@@ -1,35 +1,43 @@
 .aside{
     margin-top: 0;
-    height: 800px;
+    height: 685px;
     width: 250px;
 }
 
 .main-container{
-    background-color: rgb(230, 9, 230);
+    background-color: rgb(255, 255, 255);
     display: inline-flex
     
 }
 
 .container-sidebar{
-    background-color: rgb(12, 128, 217);
-    border: black 5px solid;
+    background-color: rgb(253, 254, 255);
+    border: black 3px solid;
 }
 
 .container-sections{
     background-color: rgb(255, 255, 255);
-    border: black 5px solid;
-    height: 800px;
-    width: 1400px;
+    border: black 3px solid;
+    height: 685px;
+    width: 1280px;
+    margin-left: 3px;
+    padding: 50px 80px;
+}
+
+.container-items{
+    
+
 }
 
 .ul-decorators{
     list-style-type: none;
+    font-size: 25px;
     
 }
 
 .table {
     border-collapse: collapse;
-    width: 50%;
+    width: 90%;
 }
 
 .table th, .table td {

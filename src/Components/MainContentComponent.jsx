@@ -17,10 +17,12 @@ function MainContentComponent() {
             <SideBarComponent handleOptionSelect={handleOptionSelect} />
             </div>
             <div className="container-sections">
+                <div className="container-items">
                 {selectedOption === 'materials' && <MaterialsComponent />}
                 {selectedOption === 'componentOne' && <ExampleComponent1 />}
                 {selectedOption === 'componentTwo' && <ExampleComponent2 />}
                 {selectedOption === 'componentTree' && <ExampleComponent3 />}
+                </div>
             </div>
         </div>
     )
